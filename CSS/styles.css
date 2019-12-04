@@ -1,0 +1,70 @@
+.nota{
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    margin-right: 45px;
+    font-weight: 600;
+}
+.sitelogo{
+    width:45px;
+    height: auto;
+    margin-left: 35px;
+    margin-right: 15px;
+}
+.sizechange{
+    font-size: 18px;
+    margin-left:15px;
+    margin-right: 15px;
+    font-weight: 300;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile{
+    width:350px;
+    height:auto;
+    border-radius: 200px;
+    margin-top:50px;
+}
+
+.line-1{
+    color: lime; 
+    font-family: "Courier";
+    font-size: 180%;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 4s steps(60, end); 
+    text-align: center;
+  }
+  
+.line-1:nth-child(2){
+    animation: type2 8s steps(60, end);
+  }
+  
+  
+.inf{
+    animation: blink 1s infinite;
+}
+  
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+  
+  @keyframes type2{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100; } 
+  } 
+  
+  @keyframes blink{
+    to{opacity: .0;}
+  }
+  
+  ::selection{
+    background: black;
+  }
