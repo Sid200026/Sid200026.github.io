@@ -27,7 +27,7 @@
 .line-1{
     color: lime; 
     font-family: "Courier";
-    font-size: 180%;
+    font-size: 160%;
     margin: 10px 0 0 10px;
     white-space: nowrap;
     overflow: hidden;
@@ -195,7 +195,7 @@
 
 .changepos{
   position: absolute;
-  bottom:100px;
+  bottom:55px;
   left:30%;
   right:30%;
 }
@@ -204,23 +204,24 @@
   position: absolute;
   bottom:0px;
   width:100%;
-  background:lime;
+  background:rgb(255, 144, 71);
   height:40px;
 }
 
 .bottomref{
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   color:black;
   position: absolute;
   top:7px;
   width:100%;
+  font-weight: bolder;
 }
 
 .mid{
   position:absolute;
   bottom:60%;
-  top:25%;
+  top:20%;
   left:10%;
   right:10%;
 }
@@ -250,7 +251,8 @@
 
 @media only screen and (max-width: 400px) {
   .line-1{
-    font-size: 100%;
+    font-size: 75%;
+    font-weight: 100;
   }
   .profile{
     width:300px;
@@ -298,4 +300,16 @@
   background: url(../Images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.heading{
+  font-size: 30px;
+  color:brown;
+  font-weight: bold;
+}
+
+.lightcol{
+  background: #e2d6bf;
+  position: absolute;
+  top:70px;
 }
