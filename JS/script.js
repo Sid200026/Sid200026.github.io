@@ -1,7 +1,6 @@
 var myFullpage = new fullpage('#fullpage', {
 	anchors:['intro', 'about', 'projects', 'contact'],
 	navigationTooltips: ['Intoduction', 'About Me', 'Projects', 'Contact'],
-    sectionsColor: ['', '', '#7BAABE', '#ccddff'],
 	css3: true,
 	scrollingSpeed: 700,
 	navigation: true,
@@ -66,3 +65,4 @@ jQuery('.Count').each(function () {
     }
   });
 });
+
