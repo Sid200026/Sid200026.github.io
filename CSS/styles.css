@@ -17,16 +17,10 @@
     margin-right: 15px;
     font-weight: 300;
 }
-.middle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 .profile{
-    width:350px;
+    width:370px;
     height:auto;
-    border-radius: 200px;
+    border-radius: 300px;
     margin-top:50px;
 }
 
@@ -40,10 +34,12 @@
     width: 30em;
     animation: type 4s steps(60, end); 
     text-align: center;
+    font-weight: 100;
+    width:100%;
   }
   
 .line-1:nth-child(2){
-    animation: type2 8s steps(60, end);
+    animation: type2 6s steps(60, end);
   }
   
   
@@ -62,9 +58,169 @@
   } 
   
   @keyframes blink{
-    to{opacity: .0;}
+    to{opacity: .0;}    
   }
   
   ::selection{
-    background: black;
+    background: rgb(85, 73, 73);
   }
+  .backimage{
+    background: url(../Images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .aboutme1{
+    position: absolute;
+    left: 100px;
+    top:75px;
+    right:100px;
+    text-align: justify;
+    text-align: center;
+  }
+  .detail{
+    font-size: 20px;
+    color:black;
+    font-weight: 300;
+  }
+  .relpos{
+    position: relative;
+    height:100%;
+  }
+
+  .head{
+    color:orange;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .skills{
+    position: absolute;
+    bottom:5px;
+    left:60px;
+    right:60px;
+  }
+
+  .Count:after{
+    content:"%"
+  }
+
+  .techno{
+    color:red;
+    font-weight: bold;
+  }
+  
+  .skillbar {
+    position:relative;
+    display:block;
+    margin-bottom:10px;
+    width:100%;
+    background:#eee;
+    height:35px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+  }
+  
+  .skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+  width:110px;
+    font-weight:bold;
+    font-size:13px;
+    color:#ffffff;
+    background:#6adcfa;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+  }
+  
+  .skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.1);
+    padding:0 10px;
+    height:35px;
+    line-height:35px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+  }
+  
+  .skillbar-bar {
+    height:35px;
+    width:0px;
+    background:#6adcfa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+  }
+  
+  .skill-bar-percent {
+    position:absolute;
+    right:10px;
+    top:0;
+    font-size:11px;
+    height:35px;
+    line-height:35px;
+    color:#ffffff;
+    color:rgba(0, 0, 0, 0.4);
+  }
+
+  .skillhead{
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: orange;
+  }
+
+@media only screen and (max-width: 400px) {
+  .line-1{
+    font-size: 100%;
+  }
+  .profile{
+    width:300px;
+  }
+  .aboutme1{
+    position: absolute;
+    left: 5%;
+    top:10%;
+    right:5%;
+    text-align: justify;
+    text-align: center;
+  }
+  .head{
+    font-size: 30px;
+  }
+  .detail{
+    font-size:15px;
+  }
+  .notmob{
+    visibility: hidden;
+  }
+  .skills{
+    position: absolute;
+    bottom:1%;
+    left:2%;
+    right:2%;
+  }
+  .skillhead{
+    font-size:30px;
+  }
+}

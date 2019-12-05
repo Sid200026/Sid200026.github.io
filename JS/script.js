@@ -1,57 +1,17 @@
 var myFullpage = new fullpage('#fullpage', {
-    menu: '#menu',
-	lockAnchors: false,
-	anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
-	navigation: false,
-	navigationPosition: 'right',
-	navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide'],
-	showActiveTooltip: false,
-	slidesNavigation: false,
-	slidesNavPosition: 'bottom',
-    sectionsColor: ['#181818', '#4BBFC3', '#7BAABE', '#ccddff'],
-    css3: true,
+	anchors:['intro', 'about', 'projects', 'contact'],
+	navigationTooltips: ['Intoduction', 'About Me', 'Projects', 'Contact'],
+    sectionsColor: ['', '', '#7BAABE', '#ccddff'],
+	css3: true,
 	scrollingSpeed: 700,
-	autoScrolling: true,
-	fitToSection: true,
-	fitToSectionDelay: 1000,
-	scrollBar: false,
-	easing: 'easeInOutCubic',
-	easingcss3: 'ease',
-	loopBottom: false,
-	loopTop: false,
-	loopHorizontal: true,
-	continuousVertical: false,
-	continuousHorizontal: false,
-	scrollHorizontally: false,
-	interlockedSlides: false,
+	navigation: true,
+	slidesNavigation: true,
+	responsiveHeight: 330,
 	dragAndMove: false,
-	offsetSections: false,
-	resetSliders: false,
-	fadingEffect: false,
-	normalScrollElements: '#element1, .element2',
-	scrollOverflow: false,
-	scrollOverflowReset: false,
-	scrollOverflowOptions: null,
-	touchSensitivity: 15,
-	bigSectionsDestination: null,
-	keyboardScrolling: true,
-	animateAnchor: true,
-	recordHistory: true,
-	controlArrows: true,
-	verticalCentered: true,
-	paddingTop: '3em',
-	paddingBottom: '10px',
-	fixedElements: '#header, .footer',
-	responsiveWidth: 0,
-	responsiveHeight: 0,
-	responsiveSlides: false,
-	parallax: false,
-	parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-	cards: false,
-	cardsOptions: {perspective: 100, fadeContent: true, fadeBackground: true},
-	sectionSelector: '.section',
-	slideSelector: '.slide',
+	controlArrows: false,
 	lazyLoading: true,
+
+	//events
 	onLeave: function(origin, destination, direction){},
 	afterLoad: function(origin, destination, direction){},
 	afterRender: function(){},
@@ -87,3 +47,22 @@ var myFullpage = new fullpage('#fullpage', {
 // }
 // typeWriter()
 // typeWriter1()
+
+jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},6000);
+	});
+});
+
+jQuery('.Count').each(function () {
+  var $this = $(this);
+  jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+    duration: 6000,
+    easing: 'swing',
+    step: function () {
+      $this.text(Math.ceil(this.Counter));
+    }
+  });
+});
