@@ -66,6 +66,7 @@
   }
   
   .backimage{
+    background: black;
     background: url(../Images/background.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
@@ -258,6 +259,7 @@
 
 
 .dark{
+  background: black;
   background: url(../Images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
