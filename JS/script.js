@@ -3,22 +3,22 @@ var myFullpage = new fullpage('#fullpage', {
 	navigationTooltips: ['Intoduction', 'About Me', 'Projects', 'Contact'],
 	css3: true,
 	scrollingSpeed: 700,
-	navigation: true,
-	slidesNavigation: true,
+	// navigation: true,
+	// slidesNavigation: true,
 	responsiveHeight: 330,
 	dragAndMove: false,
 	controlArrows: false,
 	lazyLoading: true,
 
 	//events
-	onLeave: function(origin, destination, direction){},
-	afterLoad: function(origin, destination, direction){},
-	afterRender: function(){},
-	afterResize: function(width, height){},
-	afterReBuild: function(){},
-	afterResponsive: function(isResponsive){},
-	afterSlideLoad: function(section, origin, destination, direction){},
-	onSlideLeave: function(section, origin, destination, direction){}
+	// onLeave: function(origin, destination, direction){},
+	// afterLoad: function(origin, destination, direction){},
+	// afterRender: function(){},
+	// afterResize: function(width, height){},
+	// afterReBuild: function(){},
+	// afterResponsive: function(isResponsive){},
+	// afterSlideLoad: function(section, origin, destination, direction){},
+	// onSlideLeave: function(section, origin, destination, direction){}
 });
 
 // var i = 0;
@@ -65,4 +65,3 @@ jQuery('.Count').each(function () {
     }
   });
 });
-

@@ -24,6 +24,10 @@
     margin-top:50px;
 }
 
+.dettext{
+  margin-bottom: 30px;
+}
+
 .line-1{
     color: lime; 
     font-family: "Courier";
@@ -75,9 +79,11 @@
     text-align: center;
   }
   .detail{
+    margin-top: 30px;
     font-size: 20px;
     color:black;
     font-weight: 300;
+    line-height: 37px;
   }
   .relpos{
     position: relative;
@@ -249,6 +255,50 @@
 
 
 
+
+
+.dark{
+  background: url(../Images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heading{
+  color:brown;
+  font-weight: bold;
+  position: absolute;
+  top:70px;
+  text-align: center;
+  left:1%;
+  right:1%;
+  font-size: 250%;
+}
+
+.lightcol{
+  background: #e2d6bf;
+}
+
+.slideproj{
+  position: absolute;
+  bottom:1%;
+  top:7%;
+  left:27%;
+  right:27%;
+}
+
+.git{
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.md{
+  font-size: 19px;
+}
+
+.champ{
+  font-size: 35px;
+}
+
 @media only screen and (max-width: 400px) {
   .line-1{
     font-size: 75%;
@@ -270,18 +320,19 @@
   }
   .detail{
     font-size:15px;
+    line-height: normal;
   }
   .notmob{
     visibility: hidden;
   }
   .colchange{
-    font-size: 18px;
-    color: #f7f7ed;;
+    font-size: 16px;
+    color: #f7f7ed;
   }
   .mid{
     position:absolute;
     bottom:68%;
-    top:19%;
+    top:14%;
     left:1%;
     right:1%;
   }
@@ -294,22 +345,16 @@
   .skillhead{
     font-size:30px;
   }
-}
-
-.dark{
-  background: url(../Images/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.heading{
-  font-size: 30px;
-  color:brown;
-  font-weight: bold;
-}
-
-.lightcol{
-  background: #e2d6bf;
-  position: absolute;
-  top:70px;
+  .slideproj{
+    left:1%;
+    right:1%;
+    top:5%;
+  }
+  .changepos{
+    left:7%;
+    right:7%;
+  }
+  .champ{
+    font-size: 20px;
+  }
 }

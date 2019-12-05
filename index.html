@@ -13,8 +13,10 @@
     <div id="fullpage">
         <div class="section backimage">
             <div class="col-xs-1 text-center">
-                <h1 class="line-1">Hello I'm Siddharth Singha Roy</h1>
-                <h1 class="line-1">I'm a second year undergrad student at VIT Chennai.</h1>
+                <div class="dettext">
+                    <h1 class="line-1 champ">Hello I'm Siddharth Singha Roy</h1>
+                    <h1 class="line-1 champ">CSE Sophomore at VIT Chennai.</h1>
+                </div>
                 <span class="inf"></span>
                 <img class="profile" src="./Images/profile.jpg" alt="My Picture">
             </div>
@@ -84,9 +86,61 @@
                 </div>
             </div>
         </div>
-        <div class="section bg-info">
-                <div class="col-xs-1 text-center">
-                    <h1 class="line-1 heading">Projects</h1>
+        <div class="section lightcol">
+                <div class="col-xs-1 text-center relpos">
+                    <h1 class="heading">Projects</h1>
+                    <div class="slideproj">                   
+                        
+
+
+
+
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                            <a class="git"  target="_blank" href="https://github.com/Sid200026/Aorta">Aorta</a>
+                                            <p class="md">A heart disease predictor application with additional features like contacting doctors, viewing report and report generation. </p>
+                                        <img class="d-block w-100" src="./Images/Aorta.jpg" alt="Aorta">
+                                      </div>
+                                      <div class="carousel-item">
+                                            <a class="git"  target="_blank" href="https://github.com/Sid200026/EinNel">EinNel</a>
+                                            <p class="md">An employee perfomance prediction system with extra features like allocating tasks, rating tasks sending emails and a chat room.</p>
+                                        <img class="d-block w-100" src="./Images/EinNell.jpg" alt="EinNel">
+                                      </div>
+                                      <div class="carousel-item">
+                                            <a class="git" target="_blank" href="https://github.com/Sid200026/URL-Shortener">URL Shortener</a>
+                                            <p class="md">Similar to bit.ly, this can shorten any given URL to a randomly generated string or something that an user wants. </p>
+                                            <img class="d-block w-100" src="./Images/URLShortener.jpg" alt="URL Shortener">
+                                      </div>
+                                      <div class="carousel-item">
+                                            <a class="git" target="_blank"  href="https://github.com/Sid200026/Tic-Tac-Toe">Tic Tac Toe</a>
+                                            <p class="md">A multiplayer Tic-Tac-Toe game with features like choosing a custom name and a custom avatar for each player.</p>
+                                            <img class="d-block w-100" src="./Images/TicTacToe.jpg" alt="Tic-Tac-Toe">
+                                          </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </div>
+
+
+
+
+
+
+                        
+                    </div>
                 </div>
             </div>
         <div class="section dark">
@@ -106,13 +160,13 @@
                     </div>
                     <div class="changepos">
                             <form action="https://formspree.io/xdoklrwn" method="POST">
-                                <div class="form-group">
+                                <div class="form-group abc">
                                 <label class="changecol "for="name">Name</label>
-                                <input type="text" name="name" class="form-control" id="name" aria-describedby="name">
+                                <input required type="text" name="name" class="form-control" id="name" aria-describedby="name">
                               </div>
                               <div class="form-group">
                                 <label class="changecol "for="exampleInputEmail1">Email address</label>
-                                <input type="email" name="_replyto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input required type="email" name="_replyto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                 <small id="emailHelp" class="form-text text-muted colch">I'll never share your email with anyone else.</small>
                               </div>
                               <div class="form-group">
