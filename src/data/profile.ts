@@ -48,11 +48,6 @@ export const profile: Profile = {
       period: "2021",
       roles: [{ title: "Software Engineer Intern", period: "May — Jul" }],
     },
-    {
-      name: "Acumensa Technologies",
-      period: "2020",
-      roles: [{ title: "Full Stack Developer", period: "Jun — Aug" }],
-    },
   ],
 
   publications: [
