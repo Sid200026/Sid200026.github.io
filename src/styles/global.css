@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import "@fontsource/jetbrains-mono/latin-400.css";
+@import "@fontsource/jetbrains-mono/latin-500.css";
+@import "@fontsource/jetbrains-mono/latin-600.css";
+
+@theme {
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-canvas: #0a0a0a;
+  --color-surface: #101010;
+  --color-hairline: #1e1e1e;
+  --color-edge: #2c2c2c;
+  --color-ink: #ededed;
+  --color-ink-soft: #b4b4b4;
+  --color-ink-muted: #7a7a7a;
+  --color-ink-dim: #4d4d4d;
+  --color-live: #3fb950;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-canvas text-ink font-mono;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: -0.01em;
+  }
+
+  @media (min-width: 640px) {
+    body {
+      font-size: 15px;
+    }
+  }
+
+  /* Ambient glow anchored to the top-left so the page never reads as flat black. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      700px 460px at 15% -5%,
+      rgb(255 255 255 / 0.045),
+      transparent 70%
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

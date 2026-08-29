@@ -1,0 +1,29 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/components/Header";
+import { Section } from "@/components/Section";
+import { Experience } from "@/components/Experience";
+import { Publications } from "@/components/Publications";
+import { EducationList } from "@/components/EducationList";
+import { profile } from "@/data/profile";
+---
+
+<BaseLayout
+  title={`${profile.name} — ${profile.title} at ${profile.company}`}
+  description={profile.bio}
+  image={profile.avatar}
+>
+  <Header profile={profile} />
+
+  <Section label="Experience">
+    <Experience companies={profile.companies} />
+  </Section>
+
+  <Section label="Publication">
+    <Publications publications={profile.publications} />
+  </Section>
+
+  <Section label="Education">
+    <EducationList entries={profile.education} />
+  </Section>
+</BaseLayout>
