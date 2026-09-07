@@ -15,7 +15,7 @@ export interface Role {
   title: string;
   period: string;
   summary?: string;
-  summaryLink?: InlineLink;
+  summaryLinks?: InlineLink[];
   current?: boolean;
 }
 

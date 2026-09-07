@@ -11,15 +11,18 @@ All copy lives in [`src/data/profile.ts`](src/data/profile.ts), typed by
 [`src/data/types.ts`](src/data/types.ts). Adding a role or publication means
 adding an object there — no component changes required.
 
-Role summaries support one inline link via a `{link}` placeholder:
+Role summaries support inline links via ordered `{link}` placeholders:
 
 ```ts
 {
   title: "Research Scientist 2",
   period: "Jul 2025 —",
   current: true,
-  summary: "GitHub Copilot — {link} and HydraFusion.",
-  summaryLink: { text: "auto-mode model routing", href: "https://..." },
+  summary: "GitHub Copilot — {link} and {link}.",
+  summaryLinks: [
+    { text: "auto-mode model routing", href: "https://..." },
+    { text: "HydraFusion", href: "https://..." },
+  ],
 }
 ```
 

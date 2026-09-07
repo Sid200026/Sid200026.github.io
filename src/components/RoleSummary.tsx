@@ -5,14 +5,13 @@ const LINK_PLACEHOLDER = "{link}";
 
 interface RoleSummaryProps {
   summary: string;
-  link?: InlineLink;
+  links?: InlineLink[];
 }
 
 /**
- * Renders a summary where `{link}` is substituted with an anchor. Splitting on the
- * placeholder keeps the copy in the data layer free of markup.
+ * Replaces each `{link}` placeholder with the link at the same position.
  */
-export function RoleSummary({ summary, link }: RoleSummaryProps) {
+export function RoleSummary({ summary, links = [] }: RoleSummaryProps) {
   const segments = summary.split(LINK_PLACEHOLDER);
 
   return (
@@ -20,14 +19,14 @@ export function RoleSummary({ summary, link }: RoleSummaryProps) {
       {segments.map((segment, index) => (
         <Fragment key={index}>
           {segment}
-          {link && index < segments.length - 1 && (
+          {links[index] && index < segments.length - 1 && (
             <a
-              href={link.href}
+              href={links[index].href}
               target="_blank"
               rel="noreferrer"
               className="border-b border-edge text-[#c0c0c0] transition-colors duration-200 hover:border-ink-muted hover:text-white"
             >
-              {link.text}
+              {links[index].text}
             </a>
           )}
         </Fragment>

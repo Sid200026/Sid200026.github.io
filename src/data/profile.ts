@@ -24,20 +24,28 @@ export const profile: Profile = {
           title: "Research Scientist 2",
           period: "Jul 2025 —",
           current: true,
-          summary: "GitHub Copilot — {link} and HydraFusion.",
-          summaryLink: {
-            text: "auto-mode model routing",
-            href: "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/",
-          },
+          summary: "GitHub Copilot — {link} and {link}.",
+          summaryLinks: [
+            {
+              text: "auto-mode model routing",
+              href: "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/",
+            },
+            {
+              text: "HydraFusion",
+              href: "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+            },
+          ],
         },
         {
           title: "Software Engineer 2",
           period: "2024 — 2025",
           summary: "{link} — a managed Azure service for running Playwright browser tests at cloud scale.",
-          summaryLink: {
-            text: "Microsoft Playwright Testing",
-            href: "https://azure.microsoft.com/en-us/products/playwright-testing",
-          },
+          summaryLinks: [
+            {
+              text: "Microsoft Playwright Testing",
+              href: "https://azure.microsoft.com/en-us/products/playwright-testing",
+            },
+          ],
         },
         { title: "Software Engineer", period: "2022 — 2024" },
         { title: "Software Development Intern", period: "Jan — Jun 2022" },

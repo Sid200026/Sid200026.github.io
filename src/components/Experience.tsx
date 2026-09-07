@@ -1,7 +1,7 @@
 import type { Company, Role } from "@/data/types";
 import { RoleSummary } from "./RoleSummary";
 
-function RoleEntry({ title, period, summary, summaryLink, current }: Role) {
+function RoleEntry({ title, period, summary, summaryLinks, current }: Role) {
   const tickColor = current ? "bg-live" : "bg-edge";
 
   return (
@@ -13,7 +13,7 @@ function RoleEntry({ title, period, summary, summaryLink, current }: Role) {
         </h4>
         <span className="text-xs tabular-nums text-[#464646] sm:text-[12.5px]">{period}</span>
       </div>
-      {summary && <RoleSummary summary={summary} link={summaryLink} />}
+      {summary && <RoleSummary summary={summary} links={summaryLinks} />}
     </li>
   );
 }
