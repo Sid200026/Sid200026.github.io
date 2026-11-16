@@ -27,12 +27,12 @@ export const profile: Profile = {
           summary: "GitHub Copilot — {link} and {link}.",
           summaryLinks: [
             {
-              text: "auto-mode model routing",
-              href: "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/",
+              text: "Copilot Fusion",
+              href: "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
             },
             {
-              text: "HydraFusion",
-              href: "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+              text: "auto-mode model routing",
+              href: "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/",
             },
           ],
         },
@@ -61,11 +61,11 @@ export const profile: Profile = {
   publications: [
     {
       title: "HyDRA: Hybrid Dynamic Routing Architecture for Heterogeneous LLM Pools",
-      authors: ["A. Garg", "S. Singha Roy", "J. Jang", "F. Brancasi", "S. Fu"],
+      authors: ["A. Garg", "S. Singha Roy", "S. Fu", "F. Brancasi", "J. Jang", "G. Cianci"],
       selfAuthor: "S. Singha Roy",
-      identifier: "arXiv 2605.17106",
-      date: "May 2026",
-      href: "https://arxiv.org/abs/2605.17106",
+      identifier: "EMNLP 2026 Industry Track",
+      date: "October 2026",
+      href: "https://aclanthology.org/2026.emnlp-industry.82/",
     },
   ],
 
