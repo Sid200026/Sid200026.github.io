@@ -20,8 +20,8 @@ Role summaries support inline links via ordered `{link}` placeholders:
   current: true,
   summary: "GitHub Copilot — {link} and {link}.",
   summaryLinks: [
+    { text: "Copilot Fusion", href: "https://..." },
     { text: "auto-mode model routing", href: "https://..." },
-    { text: "HydraFusion", href: "https://..." },
   ],
 }
 ```
