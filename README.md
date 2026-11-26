@@ -1,6 +1,6 @@
 # sid200026.github.io
 
-Personal site — [sid200026.github.io](https://sid200026.github.io)
+Personal site — [sid200026.com](https://sid200026.com)
 
 Astro + React + Tailwind, statically rendered. No JavaScript is shipped to the
 browser; React is used purely as a build-time templating layer.
