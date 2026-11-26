@@ -34,6 +34,14 @@ export interface Publication {
   href: string;
 }
 
+export interface Project {
+  title: string;
+  description: string;
+  href: string;
+  linkLabel: string;
+  image: { src: string; alt: string; width: number; height: number };
+}
+
 export interface Education {
   institution: string;
   degree: string;
@@ -50,5 +58,6 @@ export interface Profile {
   socials: SocialLink[];
   companies: Company[];
   publications: Publication[];
+  projects: Project[];
   education: Education[];
 }

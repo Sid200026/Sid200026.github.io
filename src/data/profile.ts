@@ -69,6 +69,22 @@ export const profile: Profile = {
     },
   ],
 
+  projects: [
+    {
+      title: "F-AI",
+      description:
+        "F1, for AI. A racing benchmark where AI models read live telemetry and control steering, throttle, braking and hybrid boost to set the fastest clean lap, in a simulator based on the 2026 F1 rules.",
+      href: "https://faibench.com",
+      linkLabel: "faibench.com",
+      image: {
+        src: "/faibench.png",
+        alt: "F-AI replay: a race car chasing a ghost car",
+        width: 860,
+        height: 418,
+      },
+    },
+  ],
+
   education: [
     {
       institution: "Vellore Institute of Technology",
